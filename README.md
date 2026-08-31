@@ -14,11 +14,9 @@ This repository is the standalone, client-side WebMCP extraction for the hackath
 
 ## Tools
 
-The requested list names seven operations even though it calls them “six,” so this submission includes all seven names:
+The live app at [infiniterealms.app](https://infiniterealms.app) currently exposes six tools: `join_party`, `list_my_characters`, `get_scene`, `speak_as_companion`, `roll_for_companion`, and `act_in_combat`. `leave` ships in this package and lands in production shortly.
 
-`join_party` · `leave` · `get_scene` · `speak_as_companion` · `roll_for_companion` · `act_in_combat` · `list_my_characters`
-
-The original extracted bridge registered the six core tools; `leave` completes the companion lifecycle contract. Every non-read-only operation remains behind the authenticated Infinite Realms API and its server-side rules.
+Every non-read-only operation remains behind the authenticated Infinite Realms API and its server-side rules.
 
 ## Quickstart against the live app
 
@@ -31,6 +29,8 @@ You need an account, an active game session, and a browser or agent host that ex
 5. For the fun failure demo, try to add a third active companion or act before the companion’s turn. The engine should return an explicit HTTP 422 refusal.
 
 The full ChatGPT desktop walkthrough, Chrome flags, DevTools probe, and troubleshooting notes are in [`docs/quickstart.md`](docs/quickstart.md).
+
+Chrome flags expose the page API for manual inspection only — there is currently no browser-native agent that consumes it; ChatGPT desktop's embedded browser is the only end-to-end consumer today.
 
 ## Use the extracted bridge in a React host
 

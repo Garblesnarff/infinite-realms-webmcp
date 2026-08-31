@@ -10,7 +10,7 @@ This document describes the page-side tools and the HTTP contracts behind them. 
 
 The host supplies the authenticated bearer header. The agent supplies tool arguments, never user identity. The API authenticates the user, verifies session ownership, and checks companion ownership on every protected operation.
 
-The request called these “six tools” but listed seven names. All seven named operations are documented here. The six core operations are joined by the `leave` lifecycle operation.
+The live app at [infiniterealms.app](https://infiniterealms.app) currently exposes six tools. `leave` ships in this package and lands in production shortly. This document covers the six live tools plus the package’s `leave` addition.
 
 ## Shared conventions
 

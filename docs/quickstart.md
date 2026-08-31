@@ -42,6 +42,8 @@ For development or Canary builds that use feature flags instead of the flag UI, 
 
 Do not copy credentials into a launch command. Use a separate browser profile if you want an isolated test session.
 
+Chrome flags expose the page API for manual inspection only — there is currently no browser-native agent that consumes it; ChatGPT desktop's embedded browser is the only end-to-end consumer today.
+
 In DevTools on the game page, feature-detect the current API:
 
 ```js
