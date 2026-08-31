@@ -1,0 +1,33 @@
+{
+  "name": "infinite-realms-webmcp",
+  "version": "0.1.0",
+  "description": "Standalone WebMCP companion tools for Infinite Realms.",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "src/index.ts",
+    "src/webmcp/companion-api.ts",
+    "src/webmcp/companion-tools.tsx",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "scan:secrets": "node scripts/secret-scan.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run scan:secrets"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.20",
+    "prettier": "^3.6.2",
+    "react": "^18.3.1",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.5"
+  }
+}
