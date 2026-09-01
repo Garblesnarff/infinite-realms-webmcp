@@ -22,7 +22,7 @@ Use the embedded Browser panel/tab in ChatGPT desktop, not an unrelated external
 7. During combat, ask for `get_scene` before `act_in_combat`. The tool is intentionally refused when the companion is not the current-turn participant.
 8. To demonstrate the other guard, join two active companions and attempt a third. A `422` companion-cap response is a successful policy boundary, not a broken tool.
 
-The live deployment and the desktop build may expose different tool inventories. If the agent cannot see tools, do not infer that the page is unauthenticated from the ordinary UI alone; verify that the active game page is loaded and that the browser runtime exposes WebMCP.
+All seven tools are now live on [infiniterealms.app](https://infiniterealms.app). If the agent cannot see tools, do not infer that the page is unauthenticated from the ordinary UI alone; verify that the active game page is loaded and that the browser runtime exposes WebMCP.
 
 ## 3. Chrome / Chromium testing
 

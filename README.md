@@ -14,7 +14,7 @@ This repository is the standalone, client-side WebMCP extraction for the hackath
 
 ## Tools
 
-The live app at [infiniterealms.app](https://infiniterealms.app) currently exposes six tools: `join_party`, `list_my_characters`, `get_scene`, `speak_as_companion`, `roll_for_companion`, and `act_in_combat`. `leave` ships in this package and lands in production shortly.
+All seven tools are now live on [infiniterealms.app](https://infiniterealms.app): `join_party`, `leave`, `list_my_characters`, `get_scene`, `speak_as_companion`, `roll_for_companion`, and `act_in_combat`.
 
 Every non-read-only operation remains behind the authenticated Infinite Realms API and its server-side rules.
 
